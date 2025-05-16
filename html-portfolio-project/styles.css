@@ -1,0 +1,614 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #4d44db;
+  --dark-color: #2f2e41;
+  --light-color: #f8f9fa;
+  --accent-color: #ff6584;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-color);
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary-color) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 10px;
+  color: var(--dark-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+}
+
+.hero h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.project-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  background: white;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+  height: 200px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.project-card .card-body {
+  padding: 25px;
+}
+
+.project-card .card-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-card .card-text {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-link i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--secondary-color);
+}
+
+.project-link:hover i {
+  transform: translateX(5px);
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 50px 0 20px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199.98px) {
+  /* Large devices (desktops, less than 1200px) */
+  .hero {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* Medium devices (tablets, less than 992px) */
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .about-img {
+    max-width: 350px !important;
+  }
+
+  .project-img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Small devices (landscape phones, less than 768px) */
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .about-img {
+    max-width: 300px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .project-card {
+    margin-bottom: 25px;
+  }
+
+  .contact form {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Extra small devices (portrait phones, less than 576px) */
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .btn-primary {
+    padding: 8px 20px;
+  }
+
+  .project-img {
+    height: 160px;
+  }
+
+  .project-card .card-body {
+    padding: 20px;
+  }
+
+  .skills .badge {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    padding: 30px 0 15px;
+  }
+
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* iPad Pro Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    padding: 90px 0;
+  }
+
+  .project-card {
+    margin-bottom: 25px;
+  }
+}
+
+/* iPad Pro Landscape */
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    padding: 80px 0;
+  }
+}
+
+/* Large desktop screens (1440p and up) */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .hero {
+    padding: 120px 0;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .project-card .card-body {
+    padding: 30px;
+  }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 2000px) {
+  .container {
+    max-width: 1800px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .project-card {
+    margin-bottom: 40px;
+  }
+
+  .project-img {
+    height: 250px;
+  }
+}
+
+/* Mobile landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .navbar {
+    padding: 5px 0;
+  }
+
+  .project-card {
+    margin-bottom: 15px;
+  }
+}
+
+/* Foldable devices */
+@media (max-width: 350px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    margin-right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+
+  .nav-link {
+    margin: 0 5px;
+    font-size: 0.9rem;
+  }
+
+  .project-img {
+    height: 140px;
+  }
+
+  .project-card .card-title {
+    font-size: 1rem;
+  }
+
+  .project-card .card-text {
+    font-size: 0.85rem;
+  }
+
+  .project-link {
+    font-size: 0.9rem;
+  }
+
+  .back-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+/* iPad (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    padding: 90px 0;
+  }
+
+  .project-card {
+    margin-bottom: 25px;
+  }
+
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .about-img {
+    max-width: 300px !important;
+  }
+}
+
+/* Large tablets and small laptops (1025px - 1280px) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .project-card .card-body {
+    padding: 20px;
+  }
+}
+
+/* 2K and 4K screens */
+@media only screen and (min-width: 2000px) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+  }
+
+  .project-card .card-title {
+    font-size: 1.5rem;
+  }
+
+  .project-card .card-text {
+    font-size: 1.1rem;
+  }
+
+  .about-section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Foldable devices and very small screens */
+@media only screen and (max-width: 350px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+
+  .project-img {
+    height: 120px;
+  }
+
+  .project-card .card-body {
+    padding: 15px;
+  }
+
+  .project-card .card-title {
+    font-size: 0.95rem;
+  }
+
+  .project-card .card-text {
+    font-size: 0.8rem;
+  }
+
+  .project-link {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tall mobile devices (like Galaxy Fold unfolded) */
+@media only screen and (min-height: 800px) and (max-width: 768px) {
+  .hero {
+    padding: 100px 0;
+  }
+
+  .section-title {
+    margin-bottom: 50px;
+  }
+}
+
+/* Short mobile devices */
+@media only screen and (max-height: 600px) {
+  .hero {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Ultra-wide monitors (21:9 aspect ratio) */
+@media only screen and (min-width: 2560px) and (min-aspect-ratio: 21/9) {
+  .container {
+    max-width: 2000px;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero p {
+    font-size: 1.8rem;
+    max-width: 1000px;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 100px;
+  }
+
+  .project-card .card-title {
+    font-size: 1.8rem;
+  }
+
+  .project-card .card-text {
+    font-size: 1.3rem;
+  }
+
+  .about-section p {
+    font-size: 1.4rem;
+  }
+
+  .btn-primary {
+    padding: 15px 35px;
+    font-size: 1.2rem;
+  }
+}
+
+/* About Image Styles */
+.about-img-container {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .about-img-container {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-img-container {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-img-container {
+    width: 250px;
+    height: 250px;
+  }
+}

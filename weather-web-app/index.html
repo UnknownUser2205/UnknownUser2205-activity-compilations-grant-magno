@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Daw</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="search-container">
+        <input
+          type="text"
+          id="location-input"
+          placeholder="Enter city name..."
+          autocomplete="off"
+        />
+        <button id="search-btn"><i class="fas fa-search"></i></button>
+        <button id="location-btn"><i class="fas fa-location-arrow"></i></button>
+      </div>
+
+      <div class="weather-display">
+        <div class="current-weather">
+          <div class="location">
+            <h1 id="city-name">New York</h1>
+            <p id="current-date">Monday, June 5, 2023</p>
+          </div>
+
+          <div class="weather-info">
+            <div class="temperature">
+              <img
+                id="weather-icon"
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+                alt="Weather icon"
+              />
+              <span id="current-temp">24</span>
+              <span class="unit">°C</span>
+            </div>
+
+            <div class="details">
+              <p id="weather-description">Sunny</p>
+              <p>Feels like: <span id="feels-like">25</span>°C</p>
+              <p>Humidity: <span id="humidity">45</span>%</p>
+              <p>Wind: <span id="wind-speed">12</span> km/h</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="forecast">
+          <h2>5-Day Forecast</h2>
+          <div class="forecast-container" id="forecast-container">
+            <!-- Forecast items will be added by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

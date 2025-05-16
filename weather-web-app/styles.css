@@ -1,0 +1,385 @@
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #3f37c9;
+  --accent-color: #4895ef;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --text-color: #333;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 800px;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  padding: 25px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+.search-container button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-container button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.current-weather {
+  margin-bottom: 30px;
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.location h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: var(--dark-color);
+}
+
+.location p {
+  color: #666;
+  font-size: 14px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.temperature img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.unit {
+  font-size: 24px;
+  margin-left: 5px;
+  vertical-align: super;
+}
+
+.details {
+  text-align: right;
+}
+
+.details p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.details p:first-child {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.forecast h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: var(--dark-color);
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) rgba(0, 0, 0, 0.1);
+}
+
+.forecast-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.forecast-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.forecast-container::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.forecast-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.forecast-item img {
+  width: 50px;
+  height: 50px;
+  margin: 5px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.forecast-day {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.forecast-temp {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.high-temp {
+  font-weight: bold;
+}
+
+.low-temp {
+  color: #666;
+}
+
+/* Loading animation */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .weather-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .details {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .temperature {
+    font-size: 40px;
+  }
+
+  .temperature img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .location h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .forecast-container {
+    flex-direction: column;
+    gap: 8px;
+    overflow-x: visible;
+  }
+
+  .forecast-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: auto;
+    text-align: left;
+    padding: 12px;
+  }
+
+  .forecast-item img {
+    margin: 0;
+    order: 1;
+  }
+
+  .forecast-temp {
+    justify-content: flex-start;
+    order: 2;
+    margin-left: auto;
+    padding-left: 10px;
+  }
+
+  .search-container input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .search-container button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .app-container {
+    padding: 12px;
+  }
+
+  .location h1 {
+    font-size: 22px;
+  }
+
+  .temperature {
+    font-size: 36px;
+  }
+
+  .temperature img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .details p {
+    font-size: 14px;
+  }
+
+  .forecast-item {
+    padding: 10px;
+  }
+}

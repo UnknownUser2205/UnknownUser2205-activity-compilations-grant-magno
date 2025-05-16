@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mallig Plains Colleges, Inc. | Program Pricing</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-header">
+        <h2>🎓 Mallig Plains Colleges Program Pricing</h2>
+        <p>
+          Explore our comprehensive educational programs designed to nurture students at every stage
+          of their academic journey.
+        </p>
+      </div>
+
+      <div class="education-levels">
+        <button class="level-btn active" data-level="preschool">Preschool</button>
+        <button class="level-btn" data-level="elementary">Elementary</button>
+        <button class="level-btn" data-level="junior-high">Junior High</button>
+        <button class="level-btn" data-level="senior-high">Senior High</button>
+        <button class="level-btn" data-level="undergrad">Undergraduate</button>
+        <button class="level-btn" data-level="grad">Graduate School</button>
+      </div>
+
+      <div class="currency-toggle">
+        <button class="toggle-btn active" data-currency="usd">USD ($)</button>
+        <button class="toggle-btn" data-currency="eur">EUR (€)</button>
+        <button class="toggle-btn" data-currency="gbp">GBP (£)</button>
+      </div>
+
+      <!-- Preschool Programs -->
+      <div class="pricing-container" id="preschool-programs">
+        <!-- Playgroup Program -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Playgroup Program</h3>
+            <p class="pricing-description">Early learning foundation (Ages 2-3)</p>
+            <div class="pricing-price" data-usd="150" data-eur="135" data-gbp="120">
+              <span>$</span><span class="price-amount">150</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Sensory play activities</li>
+              <li><i class="fas fa-check"></i> Basic language development</li>
+              <li><i class="fas fa-check"></i> Social skills building</li>
+              <li><i class="fas fa-check"></i> Motor skills development</li>
+              <li><i class="fas fa-check"></i> Half-day program (3 hours)</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Kindergarten Program -->
+        <div class="pricing-card popular">
+          <div class="popular-tag">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-title">Kindergarten Program</h3>
+            <p class="pricing-description">Full preschool curriculum (Ages 4-5)</p>
+            <div class="pricing-price" data-usd="220" data-eur="200" data-gbp="175">
+              <span>$</span><span class="price-amount">220</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Reading readiness</li>
+              <li><i class="fas fa-check"></i> Basic math concepts</li>
+              <li><i class="fas fa-check"></i> Science exploration</li>
+              <li><i class="fas fa-check"></i> Arts and creative expression</li>
+              <li><i class="fas fa-check"></i> Full-day program (6 hours)</li>
+              <li><i class="fas fa-check"></i> Progress reports</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Advanced Preschool -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Advanced Preschool</h3>
+            <p class="pricing-description">Enhanced early education (Ages 5-6)</p>
+            <div class="pricing-price" data-usd="280" data-eur="250" data-gbp="225">
+              <span>$</span><span class="price-amount">280</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> All Kindergarten features</li>
+              <li><i class="fas fa-check"></i> Early reading program</li>
+              <li><i class="fas fa-check"></i> Introduction to technology</li>
+              <li><i class="fas fa-check"></i> Foreign language exposure</li>
+              <li><i class="fas fa-check"></i> Extended care options</li>
+              <li><i class="fas fa-check"></i> Field trips included</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elementary Programs -->
+      <div class="pricing-container" id="elementary-programs" style="display: none">
+        <!-- Basic Elementary -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Basic Elementary</h3>
+            <p class="pricing-description">Grades 1-3 foundational program</p>
+            <div class="pricing-price" data-usd="250" data-eur="225" data-gbp="200">
+              <span>$</span><span class="price-amount">250</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Core subjects (Reading, Math, Science)</li>
+              <li><i class="fas fa-check"></i> Social studies curriculum</li>
+              <li><i class="fas fa-check"></i> Basic computer skills</li>
+              <li><i class="fas fa-check"></i> Physical education</li>
+              <li><i class="fas fa-check"></i> Art and music classes</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Standard Elementary -->
+        <div class="pricing-card popular">
+          <div class="popular-tag">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-title">Standard Elementary</h3>
+            <p class="pricing-description">Grades 4-6 comprehensive program</p>
+            <div class="pricing-price" data-usd="320" data-eur="290" data-gbp="260">
+              <span>$</span><span class="price-amount">320</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> All Basic Elementary features</li>
+              <li><i class="fas fa-check"></i> Advanced math and science</li>
+              <li><i class="fas fa-check"></i> Research skills development</li>
+              <li><i class="fas fa-check"></i> Foreign language option</li>
+              <li><i class="fas fa-check"></i> STEM activities</li>
+              <li><i class="fas fa-check"></i> After-school clubs</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Advanced Elementary -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Advanced Elementary</h3>
+            <p class="pricing-description">Accelerated learning program</p>
+            <div class="pricing-price" data-usd="400" data-eur="360" data-gbp="320">
+              <span>$</span><span class="price-amount">400</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> All Standard Elementary features</li>
+              <li><i class="fas fa-check"></i> Gifted and talented curriculum</li>
+              <li><i class="fas fa-check"></i> Individualized learning plans</li>
+              <li><i class="fas fa-check"></i> Advanced technology integration</li>
+              <li><i class="fas fa-check"></i> Competitive academic teams</li>
+              <li><i class="fas fa-check"></i> Leadership development</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Junior High Programs -->
+      <div class="pricing-container" id="junior-high-programs" style="display: none">
+        <!-- Core Junior High -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Core Junior High</h3>
+            <p class="pricing-description">Grades 7-8 foundational program</p>
+            <div class="pricing-price" data-usd="350" data-eur="315" data-gbp="280">
+              <span>$</span><span class="price-amount">350</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Core academic subjects</li>
+              <li><i class="fas fa-check"></i> Elective course options</li>
+              <li><i class="fas fa-check"></i> Study skills development</li>
+              <li><i class="fas fa-check"></i> Basic technology integration</li>
+              <li><i class="fas fa-check"></i> Extracurricular activities</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Comprehensive Junior High -->
+        <div class="pricing-card popular">
+          <div class="popular-tag">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-title">Comprehensive JH</h3>
+            <p class="pricing-description">Grades 7-10 enhanced program</p>
+            <div class="pricing-price" data-usd="450" data-eur="405" data-gbp="360">
+              <span>$</span><span class="price-amount">450</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> All Core Junior High features</li>
+              <li><i class="fas fa-check"></i> Advanced math and science tracks</li>
+              <li><i class="fas fa-check"></i> Foreign language requirement</li>
+              <li><i class="fas fa-check"></i> Technology certification courses</li>
+              <li><i class="fas fa-check"></i> College prep workshops</li>
+              <li><i class="fas fa-check"></i> Competitive sports options</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Honors Junior High -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Honors Junior High</h3>
+            <p class="pricing-description">Advanced academic program</p>
+            <div class="pricing-price" data-usd="550" data-eur="495" data-gbp="440">
+              <span>$</span><span class="price-amount">550</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> All Comprehensive JH features</li>
+              <li><i class="fas fa-check"></i> Honors and AP courses</li>
+              <li><i class="fas fa-check"></i> Research project requirement</li>
+              <li><i class="fas fa-check"></i> Dual enrollment options</li>
+              <li><i class="fas fa-check"></i> Mentorship program</li>
+              <li><i class="fas fa-check"></i> International exchange opportunities</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Senior High Programs -->
+      <div class="pricing-container" id="senior-high-programs" style="display: none">
+        <!-- Academic Track -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Academic Track</h3>
+            <p class="pricing-description">College preparatory program</p>
+            <div class="pricing-price" data-usd="400" data-eur="360" data-gbp="320">
+              <span>$</span><span class="price-amount">400</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Core academic subjects</li>
+              <li><i class="fas fa-check"></i> Track specialization (STEM, ABM, HUMSS)</li>
+              <li><i class="fas fa-check"></i> Research project</li>
+              <li><i class="fas fa-check"></i> College application guidance</li>
+              <li><i class="fas fa-check"></i> Standard extracurriculars</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Technical-Vocational Track -->
+        <div class="pricing-card popular">
+          <div class="popular-tag">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-title">Tech-Voc Track</h3>
+            <p class="pricing-description">Skills development program</p>
+            <div class="pricing-price" data-usd="450" data-eur="405" data-gbp="360">
+              <span>$</span><span class="price-amount">450</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Core academic subjects</li>
+              <li><i class="fas fa-check"></i> Technical skills training</li>
+              <li><i class="fas fa-check"></i> Industry certification prep</li>
+              <li><i class="fas fa-check"></i> On-the-job training</li>
+              <li><i class="fas fa-check"></i> Equipment and materials included</li>
+              <li><i class="fas fa-check"></i> Job placement assistance</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- International Baccalaureate -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">IB Diploma Program</h3>
+            <p class="pricing-description">Global standard curriculum</p>
+            <div class="pricing-price" data-usd="650" data-eur="585" data-gbp="520">
+              <span>$</span><span class="price-amount">650</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> IB-certified curriculum</li>
+              <li><i class="fas fa-check"></i> University recognition worldwide</li>
+              <li><i class="fas fa-check"></i> Extended essay requirement</li>
+              <li><i class="fas fa-check"></i> Theory of Knowledge course</li>
+              <li><i class="fas fa-check"></i> CAS program (Creativity, Activity, Service)</li>
+              <li><i class="fas fa-check"></i> Bilingual diploma option</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Undergraduate Programs -->
+      <div class="pricing-container" id="undergrad-programs" style="display: none">
+        <!-- Standard Undergraduate -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Standard Undergraduate</h3>
+            <p class="pricing-description">Bachelor's degree program</p>
+            <div class="pricing-price" data-usd="800" data-eur="720" data-gbp="640">
+              <span>$</span><span class="price-amount">800</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Full degree program</li>
+              <li><i class="fas fa-check"></i> Core major requirements</li>
+              <li><i class="fas fa-check"></i> General education courses</li>
+              <li><i class="fas fa-check"></i> Library access</li>
+              <li><i class="fas fa-check"></i> Basic student services</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Enhanced Undergraduate -->
+        <div class="pricing-card popular">
+          <div class="popular-tag">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-title">Enhanced Undergraduate</h3>
+            <p class="pricing-description">Premium bachelor's experience</p>
+            <div class="pricing-price" data-usd="1000" data-eur="900" data-gbp="800">
+              <span>$</span><span class="price-amount">1000</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> All Standard features</li>
+              <li><i class="fas fa-check"></i> Priority registration</li>
+              <li><i class="fas fa-check"></i> Research opportunities</li>
+              <li><i class="fas fa-check"></i> Internship placement</li>
+              <li><i class="fas fa-check"></i> Career counseling</li>
+              <li><i class="fas fa-check"></i> Enhanced facilities access</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Honors Undergraduate -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Honors Program</h3>
+            <p class="pricing-description">Elite academic experience</p>
+            <div class="pricing-price" data-usd="1200" data-eur="1080" data-gbp="960">
+              <span>$</span><span class="price-amount">1200</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> All Enhanced features</li>
+              <li><i class="fas fa-check"></i> Small seminar classes</li>
+              <li><i class="fas fa-check"></i> Thesis requirement</li>
+              <li><i class="fas fa-check"></i> Faculty mentorship</li>
+              <li><i class="fas fa-check"></i> Study abroad options</li>
+              <li><i class="fas fa-check"></i> Graduate school preparation</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graduate Programs -->
+      <div class="pricing-container" id="grad-programs" style="display: none">
+        <!-- Master's Program -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Master's Degree</h3>
+            <p class="pricing-description">Graduate level education</p>
+            <div class="pricing-price" data-usd="1500" data-eur="1350" data-gbp="1200">
+              <span>$</span><span class="price-amount">1500</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Advanced coursework</li>
+              <li><i class="fas fa-check"></i> Thesis or comprehensive exam</li>
+              <li><i class="fas fa-check"></i> Faculty advisement</li>
+              <li><i class="fas fa-check"></i> Research opportunities</li>
+              <li><i class="fas fa-check"></i> Professional networking</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Doctoral Program -->
+        <div class="pricing-card popular">
+          <div class="popular-tag">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="pricing-title">Doctoral Program</h3>
+            <p class="pricing-description">Highest academic achievement</p>
+            <div class="pricing-price" data-usd="2000" data-eur="1800" data-gbp="1600">
+              <span>$</span><span class="price-amount">2000</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Original research</li>
+              <li><i class="fas fa-check"></i> Dissertation requirement</li>
+              <li><i class="fas fa-check"></i> Faculty committee</li>
+              <li><i class="fas fa-check"></i> Teaching opportunities</li>
+              <li><i class="fas fa-check"></i> Conference funding</li>
+              <li><i class="fas fa-check"></i> Publication support</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+
+        <!-- Executive Education -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-title">Executive Education</h3>
+            <p class="pricing-description">Professional development</p>
+            <div class="pricing-price" data-usd="2500" data-eur="2250" data-gbp="2000">
+              <span>$</span><span class="price-amount">2500</span><span>/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Flexible scheduling</li>
+              <li><i class="fas fa-check"></i> Industry expert faculty</li>
+              <li><i class="fas fa-check"></i> Applied learning projects</li>
+              <li><i class="fas fa-check"></i> Corporate partnerships</li>
+              <li><i class="fas fa-check"></i> Global business perspective</li>
+              <li><i class="fas fa-check"></i> Alumni network access</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

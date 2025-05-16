@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mallig Plains Colleges, Inc.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-folder"></i>
+        <span>Mallig Plains Colleges, Inc.</span>
+      </div>
+      <div class="header-actions">
+        <button class="toggle-nav" id="toggle-nav" title="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="user-profile">
+          <div class="avatar">GM</div>
+          <span>Grant Magno</span>
+        </div>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <nav id="nav">
+      <ul class="nav-menu">
+        <li class="nav-title">Activities</li>
+
+        <li class="nav-item">
+          <a
+            href="mpc-history/index.html"
+            class="nav-link active"
+            data-activity="mpc-history/index.html"
+          >
+            <i class="fas fa-clock"></i>
+            <span>History</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            href="birthday-invitation/index.html"
+            class="nav-link"
+            data-activity="birthday-invitation/index.html"
+          >
+            <i class="fas fa-gift"></i>
+            <span>Activity 1</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Calculator/index.html" class="nav-link" data-activity="Calculator/index.html">
+            <i class="fas fa-calculator"></i>
+            <span>Activity 2</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="enrollment-form/index.html"
+            class="nav-link"
+            data-activity="enrollment-form/index.html"
+          >
+            <i class="fas fa-file-alt"></i>
+            <span>Activity 3</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="html-portfolio-project/index.html"
+            class="nav-link"
+            data-activity="html-portfolio-project/index.html"
+          >
+            <i class="fas fa-briefcase"></i>
+            <span>Activity 4</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="login-and-signup/index.html"
+            class="nav-link"
+            data-activity="login-and-signup/index.html"
+          >
+            <i class="fas fa-lock"></i>
+            <span>Activity 5</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="my-fav-website/index.html"
+            class="nav-link"
+            data-activity="my-fav-website/index.html"
+          >
+            <i class="fas fa-link"></i>
+            <span>Activity 6</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="price-list/index.html" class="nav-link" data-activity="price-list/index.html">
+            <i class="fas fa-tags"></i>
+            <span>Activity 7</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="recipe/index.html" class="nav-link" data-activity="recipe/index.html">
+            <i class="fas fa-utensils"></i>
+            <span>Activity 8</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="top-3-movies/index.html"
+            class="nav-link"
+            data-activity="top-3-movies/index.html"
+          >
+            <i class="fas fa-film"></i>
+            <span>Activity 9</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="weather-web-app/index.html"
+            class="nav-link"
+            data-activity="weather-web-app/index.html"
+          >
+            <i class="fas fa-cloud-sun"></i>
+            <span>Activity 10</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="web-resume/index.html" class="nav-link" data-activity="web-resume/index.html">
+            <i class="fas fa-id-card"></i>
+            <span>Activity 11</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+      <div class="page-header">
+        <h1 id="activity-title">History</h1>
+        <button class="btn btn-primary" id="view-source">
+          <i class="fas fa-external-link-alt"></i>
+          <span>View Source</span>
+        </button>
+      </div>
+
+      <div class="project-content">
+        <iframe id="activity-frame" src="mpc-history/index.html" title="History"></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-text">
+          This project compilation showcases various web development activities and exercises. Each
+          activity demonstrates different aspects of HTML, CSS, and JavaScript.
+        </div>
+        <div class="copyright">&copy; 2025 Project Compilations. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

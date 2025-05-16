@@ -1,0 +1,313 @@
+/* Modern Dark Theme Styles */
+:root {
+  --primary: #6c5ce7;
+  --secondary: #a29bfe;
+  --accent: #fd79a8;
+  --dark: #2d3436;
+  --darker: #1e272e;
+  --light: #dfe6e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--darker);
+  color: var(--light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.invitation-card {
+  background: linear-gradient(135deg, var(--dark), var(--darker));
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.header {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: var(--darker);
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+  background: linear-gradient(to right, #fff, #f5f5f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.content {
+  padding: 30px;
+  text-align: center;
+}
+
+.date-time {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 25px 0;
+}
+
+.detail-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 25px;
+  border-radius: 10px;
+  border-left: 3px solid var(--accent);
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.detail-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 5px;
+  color: var(--secondary);
+}
+
+.location {
+  margin: 30px 0;
+}
+
+.location p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.cake-container {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.what-to-bring {
+  margin: 30px 0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 3px solid var(--accent);
+}
+
+.what-to-bring ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.what-to-bring li {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+.what-to-bring li::before {
+  content: '🎁';
+  position: absolute;
+  left: 0;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.map-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.send-wish {
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
+
+.send-wish:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(108, 92, 231, 0.6);
+  background-color: var(--secondary);
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent);
+  opacity: 0;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1024px) {
+  /* Tablet Landscape / Small Laptops */
+  .invitation-card {
+    max-width: 700px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablets */
+  .invitation-card {
+    max-width: 600px;
+  }
+
+  .header {
+    padding: 25px;
+  }
+
+  .content {
+    padding: 25px;
+  }
+
+  .date-time {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Large Phones / Small Tablets */
+  .date-time {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .detail-box {
+    padding: 12px 20px;
+  }
+
+  .cake-container {
+    font-size: 2.5rem;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Phones */
+  .header {
+    padding: 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .detail-value {
+    font-size: 1.1rem;
+  }
+
+  .send-wish {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .cake-container {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Small Phones */
+  .header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .detail-box {
+    padding: 10px 15px;
+  }
+
+  .detail-value {
+    font-size: 1rem;
+  }
+
+  .what-to-bring {
+    padding: 15px;
+  }
+}
